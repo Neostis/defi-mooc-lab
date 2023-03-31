@@ -8,3 +8,6 @@ artifacts
 .vscode
 
 profit.txt
+
+yarn-error.log
+yarn.lock
