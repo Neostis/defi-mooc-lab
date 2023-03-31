@@ -5,7 +5,7 @@ const { BigNumber, utils } = require("ethers");
 describe("Liquidation New Account", function () {
   console.log("Jeerapat Somsri 6210450504");
 
-  it("operate 7000 USDC", async function () {
+  it("operate 8556 USDC", async function () {
     await network.provider.request({
       method: "hardhat_reset",
       params: [
@@ -80,7 +80,7 @@ describe("Liquidation New Account", function () {
     );
 
     const profit = afterLiquidationBalance.sub(beforeLiquidationBalance);
-    console.log(`Profit of 7000 USDC is ${utils.formatEther(profit)} ETH`);
+    console.log(`Profit of 8556 USDC is ${utils.formatEther(profit)} ETH`);
 
 
     expect(profit.gt(BigNumber.from(0)), "not profitable").to.be.true;
